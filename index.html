@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyanshu Sharma - Code Astronaut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="astronaut-helmet">
+                <div class="helmet-visor"></div>
+                <div class="helmet-reflection"></div>
+            </div>
+            <div class="loading-text">
+                <h1>Divyanshu Sharma</h1>
+                <p>Code Astronaut</p>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <div class="loading-status">Initializing Mission Control...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="mainDashboard" class="main-dashboard hidden">
+        <!-- Animated Background -->
+        <canvas id="starField" class="star-field"></canvas>
+        
+        <!-- Navigation Header -->
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="astronaut-icon">🚀</div>
+                    <div class="logo-text">
+                        <h1>Divyanshu Sharma</h1>
+                        <p>Code Astronaut</p>
+                    </div>
+                </div>
+                
+                <!-- Easy Navigation Menu -->
+                <nav class="main-nav">
+                    <button class="nav-btn active" data-section="home">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </button>
+                    <button class="nav-btn" data-section="about">
+                        <span class="nav-icon">👨‍🚀</span>
+                        <span class="nav-text">About</span>
+                    </button>
+                    <button class="nav-btn" data-section="projects">
+                        <span class="nav-icon">🛰️</span>
+                        <span class="nav-text">Projects</span>
+                    </button>
+                    <button class="nav-btn" data-section="experience">
+                        <span class="nav-icon">🌌</span>
+                        <span class="nav-text">Experience</span>
+                    </button>
+                    <button class="nav-btn" data-section="skills">
+                        <span class="nav-icon">⚡</span>
+                        <span class="nav-text">Skills</span>
+                    </button>
+                    <button class="nav-btn" data-section="achievements">
+                        <span class="nav-icon">🏆</span>
+                        <span class="nav-text">Achievements</span>
+                    </button>
+                    <button class="nav-btn" data-section="contact">
+                        <span class="nav-icon">📡</span>
+                        <span class="nav-text">Contact</span>
+                    </button>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Content Sections -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home-section" class="content-section active">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <div class="hero-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-image">DS</div>
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="typing-text">Welcome to Mission Control</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                I'm <strong>Divyanshu Sharma</strong>, a Code Astronaut exploring the digital universe
+                            </p>
+                            <p class="hero-description">
+                                Specialized in backend development and database exploration. 
+                                Ready to embark on new coding adventures and build amazing digital experiences.
+                            </p>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">3+</div>
+                                    <div class="stat-label">Years Experience in Coding </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">2+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">∞</div>
+                                    <div class="stat-label">Learning Potential</div>
+                                </div>
+                            </div>
+                            <div class="hero-actions">
+                                <button class="cta-btn primary" data-section="projects">
+                                    <span>View Projects</span>
+                                    <span class="btn-icon">🚀</span>
+                                </button>
+                                <button class="cta-btn secondary" data-section="contact">
+                                    <span>Get In Touch</span>
+                                    <span class="btn-icon">📡</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-satellite"></div>
+                        <div class="floating-planet"></div>
+                        <div class="floating-asteroid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about-section" class="content-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <span class="title-icon">👨‍🚀</span>
+                            About the Astronaut
+                        </h2>
+                        <p class="section-subtitle">Get to know the person behind the code</p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <div class="about-card">
+                            <div class="card-header">
+                                <h3>Mission Profile</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="profile-info">
+                                    <div class="info-item">
+                                        <span class="info-label">Name:</span>
+                                        <span class="info-value">Divyanshu Sharma</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Rank:</span>
+                                        <span class="info-value">Codeing Astronaut</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Location:</span>
+                                        <span class="info-value">📍 Jaipur, Rajasthan</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Mission:</span>
+                                        <span class="info-value">Explore the Digital Universe</span>
+                                    </div>
+                                </div>
+                                <div class="mission-statement">
+                                    <h4>Mission Statement</h4>
+                                    <p>
+                                        As a passionate backend developer, I specialize in creating robust, 
+                                        scalable solutions that power digital experiences. My journey through 
+                                        the coding universe has equipped me with expertise in Core Java,Node.js, MongoDB, 
+                                        and modern web technologies. I believe in writing clean, efficient code 
+                                        that solves real-world problems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects-section" class="content-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <span class="title-icon">🛰️</span>
+                            Mission Projects
+                        </h2>
+                        <p class="section-subtitle">Explore my coding adventures and deployed solutions</p>
+                    </div>
+                    
+                    <div class="projects-grid">
+
+                          <!-- Project 2: AppointmentEase -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-status completed"></div>
+                                <h3 class="project-title">AppointmentEase</h3>
+                                <div class="project-year">Present</div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-image">
+                                    <div class="project-placeholder">
+                                        <span class="project-icon">📅</span>
+                                    </div>
+                                </div>
+                                <div class="project-description">
+                                    <p>
+                                        Advanced real-time appointment management system with JWT authentication 
+                                        and secure user session handling. Built for seamless scheduling and 
+                                        efficient appointment tracking.
+                                    </p>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">JWT</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Express.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/divyanshu7711" class="project-link github" target="_blank">
+                                        <span class="link-icon">📂</span>
+                                        <span>View Code</span>
+                                    </a>
+                                    <a href="https://appointmentease-demo.herokuapp.com" class="project-link demo" target="_blank">
+                                        <span class="link-icon">🚀</span>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 1: Travel Mate -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-status completed"></div>
+                                <h3 class="project-title">Travel Mate</h3>
+                                <div class="project-year">2024</div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-image">
+                                    <div class="project-placeholder">
+                                        <img src="logo.png" alt="🗺️" height="100%" width="100%" >
+                                    </div>
+                                </div>
+                                <div class="project-description">
+                                    <p>
+                                        Designed for solo travelers or visitors planning a trip to Jaipur, the app provided a curated list of major attractions
+                                        along with essential details for efficient planning.<br>
+                                        Developed a fully responsive web application using HTML, CSS.<br>
+                                        Deployed the project on GitHub Pages and ensured cross-device compatibility.
+                                    </p>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">Local Storage</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/divyanshu7711" class="project-link github" target="https://github.com/divyanshu7711">
+                                        <span class="link-icon">📂</span>
+                                        <span>View Code</span>
+                                    </a>
+                                    <a href="https://divyanshu7711.github.io/Travelmate/" class="project-link demo" target="">
+                                        <span class="link-icon">🚀</span>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                        <!-- Project 3: Portfolio Website -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-status active"></div>
+                                <h3 class="project-title">Portfolio</h3>
+                                <div class="project-year">2025</div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-image">
+                                    <div class="project-placeholder">
+                                        <span class="project-icon">🌌</span>
+                                    </div>
+                                </div>
+                                <div class="project-description">
+                                    <p>
+                                        An interactive space-themed portfolio website featuring animated 
+                                        elements, responsive design, and a unique storytelling approach 
+                                        to showcase professional experience.
+                                    </p>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Canvas API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/divyanshu7711/portfolio" class="project-link github" target="_blank">
+                                        <span class="link-icon">📂</span>
+                                        <span>View Code</span>
+                                    </a>
+                                    <a href="#" class="project-link demo current">
+                                        <span class="link-icon">🌟</span>
+                                        <span>You're Here!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience-section" class="content-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <span class="title-icon">🌌</span>
+                            Career Journey
+                        </h2>
+                        <p class="section-subtitle">My professional voyage through the tech universe</p>
+                    </div>
+                    
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Backend Developer Intern</h3>
+                                    <div class="company">Celebal Technologies</div>
+                                    <div class="duration">2025</div>
+                                </div>
+                                <div class="timeline-description">
+                                    <p>
+                                        Specialized in backend development using Node.js and MongoDB. 
+                                        Implemented JWT authentication systems, developed RESTful APIs, 
+                                        and contributed to scalable web applications.
+                                    </p>
+                                    <div class="experience-highlights">
+                                        <div class="highlight-item">✨ Built secure authentication systems</div>
+                                        <div class="highlight-item">✨ Developed RESTful API endpoints</div>
+                                        <div class="highlight-item">✨ Optimized database queries</div>
+                                    </div>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">JWT</span>
+                                    <span class="tech-tag">Express.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Self-Directed Learning</h3>
+                                    <div class="company">Continuous Development</div>
+                                    <div class="duration">2022 - Present</div>
+                                </div>
+                                <div class="timeline-description">
+                                    <p>
+                                        Continuous learning journey in  Core Java , full-stack development, database 
+                                        management, and modern web technologies. Building projects and 
+                                        expanding technical expertise.
+                                    </p>
+                                    <div class="experience-highlights">
+                                        <div class="highlight-item">✨ Mastered multiple programming languages(Java, C++,Python)</div>
+                                        <div class="highlight-item">✨ Built diverse project portfolio</div>
+                                        <div class="highlight-item">✨ Stayed current with tech trends</div>
+                                    </div>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">SQL</span>
+                                    <span class="tech-tag">Web Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills-section" class="content-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <span class="title-icon">⚡</span>
+                            Technical Arsenal
+                        </h2>
+                        <p class="section-subtitle">My toolkit for conquering coding challenges</p>
+                    </div>
+                    
+                    <div class="skills-container">
+                        <div class="skills-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-icon">☕</span>
+                                        <span class="skill-name">Java</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-icon">🌐</span>
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-icon">🎨</span>
+                                        <span class="skill-name">HTML/CSS</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h3>Database & Backend</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-icon">🗄️</span>
+                                        <span class="skill-name">SQL</span>
+                                        <span class="skill-percentage">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-icon">🐬</span>
+                                        <span class="skill-name">MySQL</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-icon">🍃</span>
+                                        <span class="skill-name">MongoDB</span>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-icon">🟢</span>
+                                        <span class="skill-name">Node.js</span>
+                                        <span class="skill-percentage">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="additional-skills">
+                            <h3>Additional Technologies</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Express.js</span>
+                                <span class="skill-tag">JWT Authentication</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">Git & GitHub</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements-section" class="content-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <span class="title-icon">🏆</span>
+                            Mission Achievements
+                        </h2>
+                        <p class="section-subtitle">Milestones and recognitions earned along the journey</p>
+                    </div>
+                    
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-glow"></div>
+                            <div class="achievement-icon">🏆</div>
+                            <div class="achievement-content">
+                                <h3>CodeHunt 2025 Winner</h3>
+                                <p>Conquered the coding championship with exceptional problem-solving skills and innovative solutions</p>
+                                <div class="achievement-year">2025</div>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-glow"></div>
+                            <div class="achievement-icon">🩸</div>
+                            <div class="achievement-content">
+                                <h3>Promotion Lead - Aashayein</h3>
+                                <p>Led promotional activities for the Aashayein Blood Donation initiative, making a positive community impact</p>
+                                <div class="achievement-year">2024</div>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-glow"></div>
+                            <div class="achievement-icon">🚀</div>
+                            <div class="achievement-content">
+                                <h3>Mission Commander</h3>
+                                <p>Successfully completed multiple development projects and internships with outstanding performance</p>
+                                <div class="achievement-year">Ongoing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact-section" class="content-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <span class="title-icon">📡</span>
+                            Mission Control Contact
+                        </h2>
+                        <p class="section-subtitle">Ready to collaborate? Let's connect and build something amazing!</p>
+                    </div>
+                    
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <a href="mailto:divyanshu.7711@gmail.com">divyanshu.7711@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">🐙</div>
+                                <div class="contact-details">
+                                    <h3>GitHub</h3>
+                                    <a href="https://github.com/divyanshu7711" target="_blank">github.com/divyanshu7711</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">💼</div>
+                                <div class="contact-details">
+                                    <h3>LinkedIn</h3>
+                                    <a href="https://linkedin.com/in/divyanshusharma7711" target="_blank">linkedin.com/in/divyanshusharma7711</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>Location</h3>
+                                    <span>Jaipur, Rajasthan</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h3>Send a Message</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <span>Send Transmission</span>
+                                    <span class="btn-icon">🚀</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Secret Terminal Access -->
+        <div class="secret-access" id="secretAccess">
+            <div class="access-icon">🛸</div>
+            <div class="access-text">Secret Access</div>
+        </div>
+        
+        <!-- Password Modal -->
+        <div id="passwordModal" class="password-modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>🔒 Restricted Access</h3>
+                    <button class="modal-close" id="modalClose">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Enter the secret code to access the hidden terminal:</p>
+                    <input type="password" id="passwordInput" placeholder="Enter password..." maxlength="10">
+                    <button id="submitPassword" class="submit-password">Access Terminal</button>
+                    <div id="passwordError" class="password-error hidden">Access Denied! Try again...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Terminal -->
+    <div id="hiddenTerminal" class="hidden-terminal">
+        <div class="terminal-header">
+            <div class="terminal-controls">
+                <div class="control red"></div>
+                <div class="control yellow"></div>
+                <div class="control green"></div>
+            </div>
+            <div class="terminal-title">ASTRO-CLI v2.1.0</div>
+            <button class="terminal-close">×</button>
+        </div>
+        <div class="terminal-content">
+            <div class="terminal-output" id="terminalOutput">
+                <div class="output-line welcome">Welcome to Astro-CLI! Type 'help' for available commands.</div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">astro@divyanshu:~$ </span>
+                <input type="text" id="terminalInput" class="terminal-input" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="terminal.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
